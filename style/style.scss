@@ -1,0 +1,449 @@
+// my usual reset
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+// my color variables
+
+$dark-base: #17252a;
+$deep-green: #2b7a78;
+$main-green: #3aafa9;
+$light-base: #def2f1;
+$light-gray: #feffff;
+
+// container padding variables for different screen sizes
+// up to 600px
+$container-padding-sm: 2em 1em;
+//from 600px
+$container-padding-s: 2em 3em;
+//from 800px
+$container-padding-m: 3em 5em;
+//from 1200px
+$container-padding-l: 4em 8em;
+//from 1500px
+$container-padding-xl: 4em 16em;
+
+body {
+  background-color: $deep-green;
+  font-family: "Poppins", arial;
+}
+
+.header-container {
+  background-color: $deep-green;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-container {
+      padding: 0.5em;
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: uppercase;
+      .logo {
+        color: $light-gray;
+      }
+    }
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      padding: 0.5em;
+      a {
+        display: flex;
+        color: $light-gray;
+      }
+    }
+
+    .nav-image {
+      display: none;
+    }
+  }
+}
+
+.hero-content {
+  padding: $container-padding-sm;
+  text-align: center;
+  h1 {
+    padding: 2em 0em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: $light-gray;
+  }
+  .cta {
+    position: relative;
+    padding-bottom: 3em;
+    letter-spacing: 2px;
+    color: $dark-base;
+    span {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 20%;
+    }
+  }
+  img {
+    width: 30px;
+  }
+}
+
+.my-hero .hero-art {
+  display: none;
+}
+
+.my-work {
+  text-align: center;
+  padding: $container-padding-sm;
+  background-color: $light-gray;
+  .projects-container {
+    padding-bottom: 3em;
+  }
+
+  .project-desc {
+    padding-bottom: 1em;
+  }
+  .portfolio-btn {
+    width: 100px;
+    padding: 0.3em 1.5em;
+    background-color: $deep-green;
+    display: grid;
+    place-content: center;
+    border: 3px solid $dark-base;
+    border-radius: 1em;
+    margin: 0.5em auto;
+    color: $light-gray;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .portfolio-image {
+    border-radius: 1em;
+  }
+}
+
+.subtitle {
+  color: $deep-green;
+  padding-bottom: 1em;
+}
+
+.section-header {
+  color: $dark-base;
+  padding-bottom: 1em;
+  font-size: 32px;
+}
+
+.my-skills {
+  text-align: center;
+  background-color: $light-base;
+  padding: $container-padding-sm;
+
+  .skills-desc {
+    padding-bottom: 1.5em;
+  }
+
+  .skills-graphic {
+    display: none;
+  }
+
+  .skill-logo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30px, 75px));
+    grid-template-rows: 1fr;
+    gap: 1em;
+    justify-content: center;
+    background-color: $light-gray;
+    border-radius: 1em;
+    padding: 1em;
+  }
+}
+
+footer {
+  padding: $container-padding-sm;
+  padding-bottom: 0.5em;
+  text-align: center;
+  color: $light-base;
+  form {
+    display: flex;
+    flex-direction: column;
+    input {
+      width: 22em;
+      margin: 0 auto;
+      padding: 0.3em;
+      margin-bottom: 0.3em;
+      font-size: 16px;
+    }
+    label {
+      color: $light-gray;
+    }
+
+    .grow {
+      padding: 1em 0em;
+    }
+    .form-button {
+      background-color: $light-base;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: 1px solid $dark-base;
+      border-radius: 0.3em;
+      margin-top: 0.5em;
+    }
+  }
+  h3 {
+    color: $light-gray;
+    padding-bottom: 1em;
+  }
+}
+
+.contact {
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+    align-items: center;
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0.3em;
+      width: 22em;
+    }
+
+    li img {
+      width: 20px;
+    }
+  }
+}
+
+// first media querry
+
+@media only screen and (min-width: 600px) {
+  .header-container {
+    padding: 0.5em 3em;
+    header {
+      .logo-container {
+        display: block;
+        padding: 0;
+      }
+    }
+    nav ul .nav-item.push-right {
+      padding-right: 0;
+    }
+    .nav-item.nav-image {
+      display: flex;
+      img {
+        width: 1.5em;
+      }
+    }
+  }
+  .hero-content,
+  .my-work,
+  .my-skills,
+  footer {
+    padding: $container-padding-s;
+  }
+  footer {
+    padding-bottom: 0.5em;
+  }
+  .hero-content h1 {
+    font-size: 50px;
+  }
+}
+
+// second media querry
+
+@media only screen and (min-width: 800px) {
+  .header-container {
+    padding: 0.5em 5em;
+  }
+
+  .hero-content,
+  .my-work,
+  .my-skills,
+  footer {
+    padding: $container-padding-m;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    form input {
+      width: 15em;
+    }
+    .contact {
+      .contact-list {
+        padding-bottom: 0;
+        justify-content: space-between;
+        li {
+          padding: 1em 0em;
+          width: 20em;
+        }
+      }
+    }
+  }
+}
+
+//third media querry
+
+@media only screen and (min-width: 1000px) {
+  .header-container nav ul .nav-item {
+    padding: 0.5em 1.5em;
+  }
+  .hero-content h1 {
+    font-size: 60px;
+  }
+  .my-work {
+    .projects-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .project-info {
+      max-width: 30em;
+      padding-right: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .portfolio-image {
+      width: 25em;
+    }
+  }
+  .my-skills {
+    .skills-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .skills-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 4em;
+      }
+
+      .skill-logo-container {
+        grid-template-columns: repeat(4, 5em);
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        height: 450px;
+      }
+    }
+  }
+  footer {
+    padding: 2em 12em;
+  }
+
+  footer h3 {
+    text-align: left;
+  }
+}
+
+// fourth media query
+
+@media only screen and (min-width: 1200px) {
+  .header-container {
+    padding: 0.5em 8em;
+  }
+
+  .my-hero {
+    padding: $container-padding-l;
+    display: flex;
+    flex-direction: row;
+    .hero-art {
+      display: block;
+      width: 25em;
+      flex: 1;
+    }
+    .hero-content {
+      padding: unset;
+      padding-right: 1em;
+      text-align: left;
+      flex: 1;
+    }
+    h1 {
+      padding: 1em 0;
+      font-size: 65px;
+    }
+    .cta {
+      font-size: 20px;
+      span {
+        left: unset;
+        transform: unset;
+      }
+    }
+  }
+  .my-skills,
+  .my-work {
+    padding: $container-padding-l;
+  }
+
+  .my-work .portfolio-image {
+    width: 30em;
+  }
+
+  .my-skills .skills-info {
+    max-width: 30em;
+  }
+
+  footer {
+    padding: 2em 16em;
+  }
+}
+
+//fitht media querry
+
+@media only screen and (min-width: 1500px) {
+  .hero-content h1 {
+    font-size: 85px;
+  }
+
+  .my-work .projects-container {
+    padding-bottom: 5em;
+  }
+
+  .my-work .projects-container,
+  .my-skills .skills-container {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+
+  .header-container {
+    padding: 1em 16em;
+  }
+
+  .my-hero,
+  .my-work,
+  .my-skills {
+    padding: $container-padding-xl;
+  }
+
+  footer {
+    padding: 2em 24em;
+    .footer-container {
+      max-width: 950px;
+    }
+  }
+}

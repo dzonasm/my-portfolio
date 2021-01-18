@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css" class="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>JonasM</title>
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <div class="logo-container">
+                <a href="#">
+                    <span class='logo'>JonasM</span>
+                </a>
+            </div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">My Work</a></li>
+                    <li class="nav-item"><a href="#">My Skills</a></li>
+                    <li class="nav-item"><a href="#">Contact</a></li>
+                    <li class="nav-item nav-image"><a href="#">
+                        <img src="Assets/alt-github.svg" alt="github"/>
+                    </a></li>
+                    <li class="nav-item nav-image  push-right"><a href="#">
+                        <img src="Assets/alt-linkedin.svg" alt="linkedin">
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+        <section class="my-hero">
+            <div class="hero-content">
+                <h1>Refining ideas into masterpieces</h1>
+                <p class="cta"><span class="finger-pointer">👇</span>Meet Jonas Marciulevičius</p>
+                <img src="./Assets/scroll.svg" alt="scroll down">
+            </div>
+            <img class="hero-art" src="Assets/graphic2.svg" alt="hero art">
+        </section>
+        <section class="my-work">
+            <h1 class="section-header">My Work</h1>
+            <div class="projects-container">
+                <div class="project-info">
+                    <h2 class="subtitle">Crown Clothing e-commerce website</h2>
+                    <p class="project-desc">
+                        This website is powered by React, Redux, Firebase, Node.js and SCSS.
+                        It includes user authentication and payments using the STRIPE API.
+                        This was my first project using React, where I really got to know the Framework.
+                    </p>
+                    <!-- should i wrap this in an a tag?? -->
+                    <a href="#"><button class="portfolio-btn">Code</button></a>
+                    <a href="#"><button class="portfolio-btn">Site</button></a>
+                </div>
+                <img class="portfolio-image" src="Assets/crwn.png" alt="crown clothing project">
+            </div>
+            <div class="projects-container reversed">
+                <div class="project-info">
+                    <h2 class="subtitle">Crown Clothing e-commerce website</h2>
+                    <p class="project-desc">
+                        This website is powered by React, Redux, Firebase, Node.js and SCSS.
+                        It includes user authentication and payments using the STRIPE API.
+                        This was my first project using React, where I really got to know the Framework.
+                    </p>
+                    <!-- should i wrap this in an a tag?? -->
+                    <a href="#"><button class="portfolio-btn">Code</button></a>
+                    <a href="#"><button class="portfolio-btn">Site</button></a>
+                </div>
+                <img class="portfolio-image" src="Assets/crwn.png" alt="crown clothing project">
+            </div>
+        </section>
+        <section class="my-skills">
+            <h1 class="section-header">My skills</h1>
+            <div class="skills-container">
+                <div class="skills-info">
+                    <h2 class="subtitle">My area of expertise is front-end development (client side of the web).</h2>
+                    <p class="skills-desc">
+                        <b>HTML</b>,<b>CSS</b> and <b>JavaScript</b> for building small to medium sized apps and landing pages, e-commerce websites. <b>React</b> paired with <b>Redux</b> has been my preferred JS framework to use, sometimes integrating <b>Typescript</b>.
+                    </p>
+                    <p class="skills-desc">
+                        <b>Bootstrap</b> and <b>Sass</b> for styles and <b>Adobe XD</b> for designing my projects. 
+                    </p>
+                    <p class="skills-desc">
+                        I am <b>always curious and open to learning</b> new languages, frameworks and libraries.
+                    </p>
+                </div>
+                <div class="skill-logo-container">
+                    <img src="Assets/html5.svg" alt="html5">
+                    <img src="Assets/css3.svg" alt="css3">
+                    <img src="Assets/javascript.svg" alt="javascript">
+                    <img src="Assets/react.svg" alt="React">
+                    <img src="Assets/github.svg" alt="github">
+                    <img src="Assets/sass.svg" alt="sass">
+                    <img src="Assets/typescript.svg" alt="Typescript">
+                    <img src="Assets/redux.svg" alt="Redux">
+                    <img src="Assets/adobe-xd.svg" alt="Adobe xd">
+                    <img src="Assets/bootstrap.svg" alt="Bootstrap">
+                    <img src="Assets/npm.svg" alt="Npm">
+                    <img src="Assets/firebase.svg" alt="firebase">
+                </div>
+            </div>
+            <img class="skills-graphic" src="Assets/graphic1.svg" alt="graphic">
+        </section>
+        <footer>
+            <h3>Contact Me</h3>
+            <div class="footer-container">
+                <section class="contact">
+                    <ul class="contact-list">
+                        <li><p><b>email:</b> jmarciulevicius@gmail.com</p><img src="Assets/gmail.svg" alt="gmail"></li>
+                        <li><p><b>GitHub:</b> /dzonasm</p><img src="Assets/alt-github.svg" alt="GitHub"></li>
+                        <li><p><b>LinkedIn:</b> Jonas Marciulevičius</p><img src="Assets/alt-linkedin.svg" alt="LinkedIn"></li>
+                    </ul>
+                    </section>
+                    <form type="submit">
+                        <label for="email">Your email:</label>
+                        <input id="email" type="email">
+                        <label for="message">Your message:</label>
+                        <input class="grow" id="message" type="text-area">
+                        <input class="form-button" type="submit" value="Send"></input>
+                    </form>
+                </div>
+        </footer>
+</body>
+</html>

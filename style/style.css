@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: #2b7a78;
+  font-family: "Poppins", arial;
+}
+
+.header-container {
+  background-color: #2b7a78;
+}
+
+.header-container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container header .logo-container {
+  padding: 0.5em;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.header-container header .logo-container .logo {
+  color: #feffff;
+}
+
+.header-container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header-container nav ul .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5em;
+}
+
+.header-container nav ul .nav-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #feffff;
+}
+
+.header-container nav ul .nav-image {
+  display: none;
+}
+
+.hero-content {
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.hero-content h1 {
+  padding: 2em 0em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 40px;
+  color: #feffff;
+}
+
+.hero-content .cta {
+  position: relative;
+  padding-bottom: 3em;
+  letter-spacing: 2px;
+  color: #17252a;
+}
+
+.hero-content .cta span {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 20%;
+}
+
+.hero-content img {
+  width: 30px;
+}
+
+.my-hero .hero-art {
+  display: none;
+}
+
+.my-work {
+  text-align: center;
+  padding: 2em 1em;
+  background-color: #feffff;
+}
+
+.my-work .projects-container {
+  padding-bottom: 3em;
+}
+
+.my-work .project-desc {
+  padding-bottom: 1em;
+}
+
+.my-work .portfolio-btn {
+  width: 100px;
+  padding: 0.3em 1.5em;
+  background-color: #2b7a78;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  border: 3px solid #17252a;
+  border-radius: 1em;
+  margin: 0.5em auto;
+  color: #feffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.my-work .portfolio-image {
+  border-radius: 1em;
+}
+
+.subtitle {
+  color: #2b7a78;
+  padding-bottom: 1em;
+}
+
+.section-header {
+  color: #17252a;
+  padding-bottom: 1em;
+  font-size: 32px;
+}
+
+.my-skills {
+  text-align: center;
+  background-color: #def2f1;
+  padding: 2em 1em;
+}
+
+.my-skills .skills-desc {
+  padding-bottom: 1.5em;
+}
+
+.my-skills .skills-graphic {
+  display: none;
+}
+
+.my-skills .skill-logo-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30px, 75px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(30px, 75px));
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #feffff;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+footer {
+  padding: 2em 1em;
+  padding-bottom: 0.5em;
+  text-align: center;
+  color: #def2f1;
+}
+
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer form input {
+  width: 22em;
+  margin: 0 auto;
+  padding: 0.3em;
+  margin-bottom: 0.3em;
+  font-size: 16px;
+}
+
+footer form label {
+  color: #feffff;
+}
+
+footer form .grow {
+  padding: 1em 0em;
+}
+
+footer form .form-button {
+  background-color: #def2f1;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid #17252a;
+  border-radius: 0.3em;
+  margin-top: 0.5em;
+}
+
+footer h3 {
+  color: #feffff;
+  padding-bottom: 1em;
+}
+
+.contact .contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.3em;
+  width: 22em;
+}
+
+.contact .contact-list li img {
+  width: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  .header-container {
+    padding: 0.5em 3em;
+  }
+  .header-container header .logo-container {
+    display: block;
+    padding: 0;
+  }
+  .header-container nav ul .nav-item.push-right {
+    padding-right: 0;
+  }
+  .header-container .nav-item.nav-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-container .nav-item.nav-image img {
+    width: 1.5em;
+  }
+  .hero-content,
+  .my-work,
+  .my-skills,
+  footer {
+    padding: 2em 3em;
+  }
+  footer {
+    padding-bottom: 0.5em;
+  }
+  .hero-content h1 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .header-container {
+    padding: 0.5em 5em;
+  }
+  .hero-content,
+  .my-work,
+  .my-skills,
+  footer {
+    padding: 3em 5em;
+  }
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-container form input {
+    width: 15em;
+  }
+  .footer-container .contact .contact-list {
+    padding-bottom: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-container .contact .contact-list li {
+    padding: 1em 0em;
+    width: 20em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .header-container nav ul .nav-item {
+    padding: 0.5em 1.5em;
+  }
+  .hero-content h1 {
+    font-size: 60px;
+  }
+  .my-work .projects-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .my-work .project-info {
+    max-width: 30em;
+    padding-right: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .my-work .portfolio-image {
+    width: 25em;
+  }
+  .my-skills .skills-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .my-skills .skills-container .skills-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 4em;
+  }
+  .my-skills .skills-container .skill-logo-container {
+    -ms-grid-columns: (5em)[4];
+        grid-template-columns: repeat(4, 5em);
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 450px;
+  }
+  footer {
+    padding: 2em 12em;
+  }
+  footer h3 {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-container {
+    padding: 0.5em 8em;
+  }
+  .my-hero {
+    padding: 4em 8em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .my-hero .hero-art {
+    display: block;
+    width: 25em;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .my-hero .hero-content {
+    padding: unset;
+    padding-right: 1em;
+    text-align: left;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .my-hero h1 {
+    padding: 1em 0;
+    font-size: 65px;
+  }
+  .my-hero .cta {
+    font-size: 20px;
+  }
+  .my-hero .cta span {
+    left: unset;
+    -webkit-transform: unset;
+            transform: unset;
+  }
+  .my-skills,
+  .my-work {
+    padding: 4em 8em;
+  }
+  .my-work .portfolio-image {
+    width: 30em;
+  }
+  .my-skills .skills-info {
+    max-width: 30em;
+  }
+  footer {
+    padding: 2em 16em;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .hero-content h1 {
+    font-size: 85px;
+  }
+  .my-work .projects-container {
+    padding-bottom: 5em;
+  }
+  .my-work .projects-container,
+  .my-skills .skills-container {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+  .header-container {
+    padding: 1em 16em;
+  }
+  .my-hero,
+  .my-work,
+  .my-skills {
+    padding: 4em 16em;
+  }
+  footer {
+    padding: 2em 24em;
+  }
+  footer .footer-container {
+    max-width: 950px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
