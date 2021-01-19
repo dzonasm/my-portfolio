@@ -45,6 +45,7 @@ body {
 
 .header-container {
   background-color: $deep-green;
+  z-index: 5;
 
   header {
     display: flex;
@@ -82,6 +83,14 @@ body {
   }
 }
 
+.my-hero {
+  background-image: url("../Assets/forrest-herro.jpg");
+  object-fit: cover;
+  background-position: 50% 75%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 .hero-content {
   padding: $container-padding-sm;
   text-align: center;
@@ -96,7 +105,7 @@ body {
     position: relative;
     padding-bottom: 3em;
     letter-spacing: 2px;
-    color: $dark-base;
+    color: $light-gray;
     span {
       position: absolute;
       left: 50%;
@@ -107,10 +116,6 @@ body {
   img {
     width: 30px;
   }
-}
-
-.my-hero .hero-art {
-  display: none;
 }
 
 .my-work {
@@ -445,5 +450,25 @@ footer {
     .footer-container {
       max-width: 950px;
     }
+  }
+}
+
+svg {
+  width: 30px;
+  height: 45px;
+}
+
+.circle {
+  animation: circleAnim 1.3s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+  from {
+    transform: translate(262px, 762px);
+    z-index: 100;
+  }
+  to {
+    transform: translate(262px, 819px);
+    z-index: 100;
   }
 }

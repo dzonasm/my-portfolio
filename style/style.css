@@ -24,6 +24,7 @@ body {
 
 .header-container {
   background-color: #2b7a78;
+  z-index: 5;
 }
 
 .header-container header {
@@ -80,6 +81,15 @@ body {
   display: none;
 }
 
+.my-hero {
+  background-image: url("../Assets/forrest-herro.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: 50% 75%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 .hero-content {
   padding: 2em 1em;
   text-align: center;
@@ -97,7 +107,7 @@ body {
   position: relative;
   padding-bottom: 3em;
   letter-spacing: 2px;
-  color: #17252a;
+  color: #feffff;
 }
 
 .hero-content .cta span {
@@ -110,10 +120,6 @@ body {
 
 .hero-content img {
   width: 30px;
-}
-
-.my-hero .hero-art {
-  display: none;
 }
 
 .my-work {
@@ -503,6 +509,41 @@ footer h3 {
   }
   footer .footer-container {
     max-width: 950px;
+  }
+}
+
+svg {
+  width: 30px;
+  height: 45px;
+}
+
+.circle {
+  animation: circleAnim 1.3s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: translate(262px, 762px);
+            transform: translate(262px, 762px);
+    z-index: 100;
+  }
+  to {
+    -webkit-transform: translate(262px, 819px);
+            transform: translate(262px, 819px);
+    z-index: 100;
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform: translate(262px, 762px);
+            transform: translate(262px, 762px);
+    z-index: 100;
+  }
+  to {
+    -webkit-transform: translate(262px, 819px);
+            transform: translate(262px, 819px);
+    z-index: 100;
   }
 }
 /*# sourceMappingURL=style.css.map */
