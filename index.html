@@ -18,13 +18,13 @@
             </div>
             <nav class="navigation">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#">My Work</a></li>
-                    <li class="nav-item"><a href="#">My Skills</a></li>
-                    <li class="nav-item"><a href="#">Contact</a></li>
-                    <li class="nav-item nav-image"><a href="#">
+                    <li class="nav-item"><a href="#work">My Work</a></li>
+                    <li class="nav-item"><a href="#skills">My Skills</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                    <li class="nav-item nav-image"><a target="_blank" href="https://github.com/dzonasm">
                         <img src="Assets/alt-github.svg" alt="github"/>
                     </a></li>
-                    <li class="nav-item nav-image  push-right"><a href="#">
+                    <li class="nav-item nav-image  push-right"><a target="_blank" href="https://www.linkedin.com/in/jonas-marciulevi%C4%8Dius-23a404200/">
                         <img src="Assets/alt-linkedin.svg" alt="linkedin">
                     </a></li>
                 </ul>
@@ -47,37 +47,39 @@
             </div>
         </section>
         <section class="my-work">
+            <a name="work"></a>
             <h1 class="section-header">My Work</h1>
             <div class="projects-container">
                 <div class="project-info">
-                    <h2 class="subtitle">Crown Clothing e-commerce website</h2>
-                    <p class="project-desc">
+                    <h2 class="subtitle anim2">Crown Clothing e-commerce website</h2>
+                    <p class="project-desc anim2">
                         This website is powered by React, Redux, Firebase, Node.js and SCSS.
                         It includes user authentication and payments using the STRIPE API.
                         This was my first project using React, where I really got to know the Framework.
                     </p>
                     <!-- should i wrap this in an a tag?? -->
-                    <a href="#"><button class="portfolio-btn">Code</button></a>
-                    <a href="#"><button class="portfolio-btn">Site</button></a>
+                    <a target="_blank" href="https://github.com/dzonasm/crwn_clothing"><button class="portfolio-btn">Code</button></a>
+                    <a target="_blank" href="https://project-crwn-live.herokuapp.com/"><button class="portfolio-btn">Site</button></a>
                 </div>
                 <img class="portfolio-image" src="Assets/crwn.png" alt="crown clothing project">
             </div>
-            <div class="projects-container reversed">
+            <div class="projects-container">
                 <div class="project-info">
-                    <h2 class="subtitle">Crown Clothing e-commerce website</h2>
-                    <p class="project-desc">
-                        This website is powered by React, Redux, Firebase, Node.js and SCSS.
-                        It includes user authentication and payments using the STRIPE API.
-                        This was my first project using React, where I really got to know the Framework.
+                    <h2 class="subtitle anim2">Project Smart-Brain</h2>
+                    <p class="project-desc anim2">
+                        A full-stack application utilizing the Clarifai API, that is able to detect human faces in photographs.
+                        It has user registration and authentication, stores user credentials in a Postgres database.
+                        The front-end is done with React.
                     </p>
                     <!-- should i wrap this in an a tag?? -->
-                    <a href="#"><button class="portfolio-btn">Code</button></a>
-                    <a href="#"><button class="portfolio-btn">Site</button></a>
+                    <a target="_blank" href="https://github.com/dzonasm/face-recognition"><button class="portfolio-btn">Code</button></a>
+                    <a target="_blank" href="https://prjct-smart-brain.herokuapp.com/"><button class="portfolio-btn">Site</button></a>
                 </div>
-                <img class="portfolio-image" src="Assets/crwn.png" alt="crown clothing project">
+                <img class="portfolio-image" src="Assets/smart-brain.png" alt="crown clothing project">
             </div>
         </section>
         <section class="my-skills">
+            <a name="skills"></a>
             <h1 class="section-header">My skills</h1>
             <div class="skills-container">
                 <div class="skills-info">
@@ -93,42 +95,61 @@
                     </p>
                 </div>
                 <div class="skill-logo-container">
-                    <img src="Assets/html5.svg" alt="html5">
-                    <img src="Assets/css3.svg" alt="css3">
-                    <img src="Assets/javascript.svg" alt="javascript">
-                    <img src="Assets/react.svg" alt="React">
-                    <img src="Assets/github.svg" alt="github">
-                    <img src="Assets/sass.svg" alt="sass">
-                    <img src="Assets/typescript.svg" alt="Typescript">
-                    <img src="Assets/redux.svg" alt="Redux">
-                    <img src="Assets/adobe-xd.svg" alt="Adobe xd">
-                    <img src="Assets/bootstrap.svg" alt="Bootstrap">
-                    <img src="Assets/npm.svg" alt="Npm">
-                    <img src="Assets/firebase.svg" alt="firebase">
+                    <img class="skill-svg" src="Assets/html5.svg" alt="html5">
+                    <img class="skill-svg" src="Assets/css3.svg" alt="css3">
+                    <img class="skill-svg" src="Assets/javascript.svg" alt="javascript">
+                    <img class="skill-svg" src="Assets/react.svg" alt="React">
+                    <img class="skill-svg" src="Assets/github.svg" alt="github">
+                    <img class="skill-svg" src="Assets/sass.svg" alt="sass">
+                    <img class="skill-svg" src="Assets/typescript.svg" alt="Typescript">
+                    <img class="skill-svg" src="Assets/redux.svg" alt="Redux">
+                    <img class="skill-svg" src="Assets/adobe-xd.svg" alt="Adobe xd">
+                    <img class="skill-svg" src="Assets/bootstrap.svg" alt="Bootstrap">
+                    <img class="skill-svg" src="Assets/npm.svg" alt="Npm">
+                    <img class="skill-svg" src="Assets/firebase.svg" alt="firebase">
                 </div>
             </div>
             <img class="skills-graphic" src="Assets/graphic1.svg" alt="graphic">
         </section>
         <footer>
             <h3>Contact Me</h3>
+            <a name="contact"></a>
             <div class="footer-container">
                 <section class="contact">
                     <ul class="contact-list">
-                        <li><p><b>email:</b> jmarciulevicius@gmail.com</p><img src="Assets/gmail.svg" alt="gmail"></li>
-                        <li><p><b>GitHub:</b> /dzonasm</p><img src="Assets/alt-github.svg" alt="GitHub"></li>
-                        <li><p><b>LinkedIn:</b> Jonas Marciulevičius</p><img src="Assets/alt-linkedin.svg" alt="LinkedIn"></li>
+                        <li>
+                            <p>
+                                <b>email:</b> jmarciulevicius@gmail.com
+                            </p>
+                            <img src="Assets/gmail.svg" alt="gmail"></li>
+                        <li>
+                            <a target="_blank" href="https://github.com/dzonasm"><b>GitHub:</b> /dzonasm</a>
+                            <img src="Assets/alt-github.svg" alt="GitHub"></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/jonas-marciulevi%C4%8Dius-23a404200/"><b>LinkedIn:</b> Jonas Marciulevičius</a>
+                            <img src="Assets/alt-linkedin.svg" alt="LinkedIn"></li>
                     </ul>
                     </section>
-                    <form type="submit">
+                    <form id="email-form"  action="https://formspree.io/f/meqpnnjk" method="POST">
                         <label for="email">Your email:</label>
-                        <input id="email" type="email">
+                        <input 
+                        name="email" 
+                        id="email" 
+                        type="email"
+                        required>
                         <label for="message">Your message:</label>
-                        <input class="grow" id="message" type="text-area">
+                        <input 
+                        name="message" 
+                        class="grow" 
+                        id="message" 
+                        type="text-area"
+                        required>
                         <input class="form-button" type="submit" value="Send"></input>
                     </form>
                 </div>
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
         <script src="./js/animations.js"></script>
+        <script src="js/script.js"></script>
 </body>
 </html>

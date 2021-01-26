@@ -184,6 +184,9 @@ body {
 }
 
 footer {
+  a {
+    color: $light-gray;
+  }
   padding: $container-padding-sm;
   padding-bottom: 0.5em;
   text-align: center;
@@ -446,10 +449,7 @@ footer {
   }
 
   footer {
-    padding: 2em 24em;
-    .footer-container {
-      max-width: 950px;
-    }
+    padding: 2em 26em;
   }
 }
 

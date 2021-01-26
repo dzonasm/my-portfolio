@@ -203,6 +203,10 @@ footer {
   color: #def2f1;
 }
 
+footer a {
+  color: #feffff;
+}
+
 footer form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,10 +509,7 @@ footer h3 {
     padding: 4em 16em;
   }
   footer {
-    padding: 2em 24em;
-  }
-  footer .footer-container {
-    max-width: 950px;
+    padding: 2em 26em;
   }
 }
 
